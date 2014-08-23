@@ -1,5 +1,10 @@
+require File.dirname(__FILE__) + '/lib/boot_inquirer'
+
 source 'https://rubygems.org'
 
+BootInquirer.each_active_app do |app|
+  gemspec path: "apps/#{app.gem_name}"
+end
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.4'
