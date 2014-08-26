@@ -2,6 +2,7 @@ PATH
   remote: .
   specs:
     staff (0.0.1)
+      devise
       mongoid (= 4.0.0)
       rails (~> 4.1.4)
 
@@ -35,9 +36,16 @@ GEM
       thread_safe (~> 0.1)
       tzinfo (~> 1.1)
     arel (5.0.1.20140414130214)
+    bcrypt (3.1.7)
     bson (2.3.0)
     builder (3.2.2)
     connection_pool (2.0.0)
+    devise (3.2.4)
+      bcrypt (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (>= 3.2.6, < 5)
+      thread_safe (~> 0.1)
+      warden (~> 1.2.3)
     erubis (2.7.0)
     hike (1.2.3)
     i18n (0.6.11)
@@ -59,6 +67,7 @@ GEM
     multi_json (1.10.1)
     optionable (0.2.0)
     origin (2.1.1)
+    orm_adapter (0.5.0)
     polyglot (0.3.5)
     rack (1.5.2)
     rack-test (0.6.2)
@@ -96,6 +105,8 @@ GEM
       polyglot (>= 0.3.1)
     tzinfo (1.2.1)
       thread_safe (~> 0.1)
+    warden (1.2.3)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
